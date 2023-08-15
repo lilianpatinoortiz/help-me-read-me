@@ -1,0 +1,14 @@
+{
+  "name": "help-me-read-me",
+  "version": "1.0.0",
+  "description": "Readme file creator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lilian Patino Ortiz",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}

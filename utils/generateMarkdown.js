@@ -1,3 +1,4 @@
+// * note: licenses list for creating the json file were taken from: https://gist.github.com/lukas-h/2a5d00690736b4c3a7b
 const licensesData = require("./licenses.json");
 
 // get license by name
@@ -9,9 +10,6 @@ function getLicenseData(name) {
 
 // Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-
-// * note: licenses list for creating the json file were taken from: https://gist.github.com/lukas-h/2a5d00690736b4c3a7b
-
 function renderLicenseBadge(licenseObject) {
   return licenseObject ? `${licenseObject[0].badge}` : ``;
 }

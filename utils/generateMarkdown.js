@@ -37,7 +37,7 @@ function generateMarkdown({
 }) {
   return `# ${projectName}
 ${renderLicenseSection(license)}
-### ~ ${moduleName}
+### ~ ${moduleName}  📝
           
 ## Description
 

@@ -34,6 +34,8 @@ function generateMarkdown({
   usageProject,
   projectResources,
   license,
+  username,
+  email,
 }) {
   return `# ${projectName}
 ${renderLicenseSection(license)}
@@ -59,6 +61,7 @@ What we learned:
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Questions](#questions)
 
 ## Installation
 
@@ -86,6 +89,10 @@ The main resources used:
 ## License
 
 Please refer to the license badge, on top of this file.
+
+## Questions
+
+Any question, please feel free to contact me directly via email ${email} or via https://github.com/${username}
 `;
 }
 

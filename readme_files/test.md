@@ -1,20 +1,20 @@
 # test
 [![License](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
-### ~ vdfgvgfdbgfb  📝
+### ~ Module 09  📝
           
 ## Description
 
 Motivation:
-- gbgfbfgb
+- Creating an awesome and professional readme file
 
 Why this project was created:
-- fgnbfghnf
+- to save us time when developing a project
 
 What are we solving:
-- ngfnhgnghbn 
+- the time it takes to create a readme file
 
 What we learned:
-- bgfbfbfg
+- the usage of fs to write files and inquirer library
 
 ## Table of Contents   
 
@@ -22,6 +22,7 @@ What we learned:
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Questions](#questions)
 
 ## Installation
 
@@ -38,14 +39,18 @@ Access the deployed project here: https://lilianpatinoortiz.github.io/Secret-Sal
 
 ## Usage
 
-fvfdvdfvgfd
+After running the project you will be able to access the site. In this site you will be able to generate your salad (random password). The site will prompt some alerts to get your input on some of the decisions like size, and characters to be included.
 
 ## Credits
 
 The main resources used:
 
--   bgbfgbfgb
+-   Module 09 information provided in canva
 
 ## License
 
 Please refer to the license badge, on top of this file.
+
+## Questions
+
+Any question, please feel free to contact me directly via email lilly.0608@gmail.com or via https://github.com/lilianpatinoortiz

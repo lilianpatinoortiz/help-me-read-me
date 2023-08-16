@@ -1,4 +1,5 @@
 // Include packages needed for this application
+const licensesData = require("./utils/licenses.json");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 const inquirer = require("inquirer");
 const fs = require("fs");
@@ -56,9 +57,10 @@ const questions = [
     message: "What resources did you use?",
   },
   {
-    type: "input",
+    type: "checkbox",
     name: "license",
-    message: "License?",
+    message: "Select your license from the options:",
+    choices: licensesData.licenses.map((license) => license.name), // create array of license names
   },
   {
     type: "input",

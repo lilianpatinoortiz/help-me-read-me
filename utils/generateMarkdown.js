@@ -1,23 +1,33 @@
+const licensesData = require("./licenses.json");
+
+// get license by name
+function getLicenseData(name) {
+  return licensesData.licenses.filter(function (license) {
+    return license.name == name;
+  });
+}
+
 // Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  // example: [![License](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)]
-  return license
-    ? `[![License](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)]`
-    : ``;
+
+// * note: licenses list for creating the json file were taken from: https://gist.github.com/lukas-h/2a5d00690736b4c3a7b
+
+function renderLicenseBadge(licenseObject) {
+  return licenseObject ? `${licenseObject[0].badge}` : ``;
 }
 
 // Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
-  return license ? `(https://opensource.org/licenses/Apache-2.0)` : ``;
+function renderLicenseLink(licenseObject) {
+  return licenseObject ? `${licenseObject[0].link}` : ``;
 }
 
 // Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
-  let licenseBadge = renderLicenseBadge(license);
-  let licenseLink = renderLicenseLink(license);
+function renderLicenseSection(licenseName) {
+  let licenseFound = getLicenseData(licenseName);
+  let licenseBadge = renderLicenseBadge(licenseFound);
+  let licenseLink = renderLicenseLink(licenseFound);
   return `${licenseBadge}${licenseLink}`;
 }
 

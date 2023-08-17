@@ -26,7 +26,7 @@ const questions = [
   {
     type: "input",
     name: "projectWhy",
-    message: "Why do yoiu think this project is useful?",
+    message: "Why do you think this project is useful?",
   },
   {
     type: "input",

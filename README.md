@@ -46,7 +46,7 @@ To run the project in your local machine:
 Here is an example of how the project should work:
 
 Video of the screen can be found in this link:
-https://drive.google.com/drive/folders/1_ufh5pd2EUT3MLHTXZ36pdTyXTxA1dZ5
+https://drive.google.com/file/d/178KTLH6Lr6KyAaX69bkD0k-pvgu4GjwU/view?usp=sharing
 
 A visual representation of the video:
 

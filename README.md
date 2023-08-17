@@ -45,6 +45,13 @@ To run the project in your local machine:
 
 Here is an example of how the project should work:
 
+Video of the screen can be found in this link:
+https://drive.google.com/drive/folders/1_ufh5pd2EUT3MLHTXZ36pdTyXTxA1dZ5
+
+A visual representation of the video:
+
+![Readme usage](assets/img/README-Generator.gif)
+
 ## Usage
 
 After running the project you will be able to access the challenge and create a readme file. You will be prompted with questions regarding your project, so the file can be populated and the result can be professional and efficient.

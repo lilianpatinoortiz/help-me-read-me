@@ -37,7 +37,7 @@ What we learned:
 To run the project in your local machine:
 
 1. Open visual studio in your computer or laptop
-2. Clone the git project: https://github.com/lilianpatinoortiz/Secret-Salad-Generator
+2. Clone the git project: https://github.com/lilianpatinoortiz/help-me-read-me
 3. Pull the latest from the 'main' branch
 4. Open a new terminal and type `npm install` to install the dependencies
 5. Locate the index file and locate yourself there

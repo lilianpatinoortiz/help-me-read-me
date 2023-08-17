@@ -8,19 +8,19 @@ function getLicenseData(name) {
   });
 }
 
-// Create a function that returns a license badge based on which license is passed in
+// Function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(licenseObject) {
   return licenseObject ? `${licenseObject[0].badge}` : ``;
 }
 
-// Create a function that returns the license link
+// Function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(licenseObject) {
   return licenseObject ? `${licenseObject[0].link}` : ``;
 }
 
-// Create a function that returns the license section of README
+// Function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(licenseName) {
   let licenseFound = getLicenseData(licenseName);
@@ -29,7 +29,7 @@ function renderLicenseSection(licenseName) {
   return `${licenseBadge}${licenseLink}`;
 }
 
-// Create a function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown({
   projectName,
   moduleName,
@@ -104,4 +104,5 @@ Any question, please feel free to contact me directly via email ${email} or via 
 `;
 }
 
+// Exporting the function so we can use it in index file
 module.exports = generateMarkdown;

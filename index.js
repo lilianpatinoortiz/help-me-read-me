@@ -1,20 +1,22 @@
-// Include packages needed for this application
+// Packages needed for this application
 const licensesData = require("./utils/licenses.json");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-// Create an array of questions for user input
+// Array of questions for user input
 const questions = [
   {
     type: "input",
     name: "projectName",
     message: "What is your project name?",
+    default: "README",
   },
   {
     type: "input",
     name: "moduleName",
     message: "What is this projects module?",
+    default: "Module 09 - Node.js Challenge: Professional README Generator",
   },
   {
     type: "input",
@@ -57,10 +59,19 @@ const questions = [
     message: "What resources did you use?",
   },
   {
-    type: "checkbox",
+    type: "list",
     name: "license",
     message: "Select your license from the options:",
     choices: licensesData.licenses.map((license) => license.name), // create array of license names
+    validate(answer) {
+      const licensesArray = licensesData.licenses.map(
+        (license) => license.name
+      );
+      if (!licensesArray.includes(answer)) {
+        return "License not valid!";
+      }
+      return true;
+    },
   },
   {
     type: "input",
@@ -74,7 +85,7 @@ const questions = [
   },
 ];
 
-// Create a function to write README file
+// Function to write README file
 function writeToFile(fileName, data) {
   fs.writeFile("readme_files/" + fileName + ".md", data, (err) =>
     err
@@ -83,7 +94,7 @@ function writeToFile(fileName, data) {
   );
 }
 
-// Create a function to initialize app
+// Function to initialize app
 function init() {
   inquirer.prompt(questions).then((answers) => {
     const readmeContent = generateMarkdown(answers);
